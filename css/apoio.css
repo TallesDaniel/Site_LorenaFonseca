@@ -1,0 +1,194 @@
+/* Configuração de Apoiadores */
+/* header */
+/* Titulos Padroes */
+section.apoiadores .section-header{
+    padding-top: 72px;
+    margin-bottom: 20px;
+}
+section.apoiadores .section-header h1{
+    color: #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* Setas */
+section.apoiadores .section-header h1:after{
+    background: #000;
+}
+section.apoiadores .section-header h1:before{
+    border-top: 12px solid #000;
+}
+section.apoiadores .section-header h1 span:before{
+    background: #000;
+}
+.section-header p{
+    font-size: 1.5rem;
+    color: #000;
+}
+/* fotos */
+section.apoiadores{
+    background: #ec268f;
+    padding: 20px;
+    text-align: center;
+}
+section.apoiadores .imgAp{
+    /*display: flex;/*transforma itens em flex*/
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;/*Define se os itens vão quebrar linha*/
+    margin-top: 40px;
+}
+section.apoiadores .imgAp img{
+    max-width: 250px;
+    margin: 0 20px 20px 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+section.apoiadores .imgAp img:hover{
+    opacity: 1;
+}
+/* Apoie Paralax */
+.apoie .ajust{
+    max-width: 800px;
+}
+.apoie{
+    background: url(../imagem/contato.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #ff2a6a;
+    padding: 10% 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.apoie .ajust{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 2px solid #ff2a6a;
+    padding: 5px 0;
+}
+.apoie .ajust p{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Oswald' , sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+.apoie span{
+    color: #ff2a6a;
+    font-size: 2.5rem;
+    font-family: 'Oswald' , sans-serif;
+    display: block;
+    margin: 5px auto 0 auto;
+}
+/* contato */
+.imgAp2{
+    background: url(../imagem/Lorena.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.form-contato .inputBx{
+    margin-bottom: 40px;
+}
+.form-contato .inputBx input,
+.form-contato .inputBx textarea{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form-contato .inputBx textarea{
+    min-height: 150px;
+}
+.form-contato .inputBx input::placeholder,
+.form-contato .inputBx textarea::placeholder{
+    color: #fff;
+}
+.form-contato .inputBx .centro{
+    text-align: center;
+}
+.form-contato .inputBx input[type="submit"]{
+    width: 150px;
+    background: #fff;
+    color: #ff2a6a;    
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: 400;    
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+.form-contato .inputBx input[type="submit"]:hover{
+    background: #ec268f;
+    color: #fff;
+}
+/* Footer Rodapé */
+.footer{
+    background: #2c3e50;
+    padding: 20px 0;
+    /* margin-top: 30px; */
+    color: #fff;
+}
+.footer .ajust{
+    max-width: 1000px;
+}
+.footer-col{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-logo img{
+    width: 300px;
+}
+.footer-redes a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    line-height: 1;
+}
+.footer-redes a:hover{
+    color: #ec268f;
+}
+
+/* Responsive************************ */
+@media (min-width: 480px){
+    .apoie span{
+        width: 80%;
+    }
+}
+@media (min-width: 768px){
+    .apoie{
+        font-size: 2rem;
+    }
+    .apoie span{
+        width: 500px;
+        font-size: 3.5rem;
+    }
+    /* footer */
+    .footer-col{
+        margin: 0;
+        width: calc(100% / 3);
+        float: left;
+    }
+    .footer-col:first-child{
+        text-align: center;
+    }
+    .footer-col:last-child{
+        text-align: right;
+        padding-top: 5px;
+    }
+    .footer-col p{
+        text-align: center;
+    }
+    .footer-redes a{
+        margin: 0;
+    }
+    .footer-redes a:not(:first-child){
+        margin-left: 20px;
+    }
+}

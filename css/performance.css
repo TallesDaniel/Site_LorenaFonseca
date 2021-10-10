@@ -1,0 +1,116 @@
+/* Performance */
+.performance{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background-image: url(../imagem/lorena_performance.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.performance p{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.performance ul{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.performance ul label{
+    font-family: 'Oswald', sans-serif;
+}
+.performance ul span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: #ff2a6a;
+    display: block;
+}
+/* Configurações Sobre *********************/
+/* Modal Sobre *********************/
+.dialog-sobre-redes{
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.dialog-sobre-redes a{
+    color: #ff2a6a;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+.dialog-sobre-redes a:hover{
+    color: #a71641a6;
+}
+/* Sobre *********************/
+.sobre{
+    background: #fff;
+    padding: 10px 30px 30px 30px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre .ajust{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.mxw800p h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.mxw800p p{
+    position: relative;
+    text-align: justify;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.mxw800p .btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ff2a6a;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #fff;
+}
+.mxw800p .btn:hover{
+    background: #fff;
+    border: 2px solid #ff2a6a;
+    color: #ff2a6a;
+}
+
+/* Responsive */
+@media (min-width: 480px){
+    .performance ul li{
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .dialog-body{
+        padding: 0 20px;
+    }
+    .performance ul li{
+        width: 25%;
+    }
+}
+@media (min-width: 960px){
+    .dialog-sobre .dialog-cols{
+        float: left;
+        width: 58%;
+    }
+    
+    .dialog-sobre .dialog-cols:last-child{
+        float: right;
+        width: 40%;
+    }
+}

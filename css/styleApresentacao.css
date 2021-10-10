@@ -1,0 +1,60 @@
+/* Configuração Apresentação */
+.sec-apresentacao{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.sec-apresentacao .contentBx{
+    background: #ec268f;
+    padding: 100px;
+    width: 50%;
+}
+.sec-apresentacao .imgAp{
+    background: url(../imagem/window.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.contentBx .heading{
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.contentBx p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.contentBx p:last-child{
+    text-align: right;
+}
+.contentBx p span{
+    color: rgb(190, 190, 190);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+/* Responsive */
+@media (max-width:959.9px){
+    .sec-apresentacao{
+        flex-direction: column;
+    }
+    .sec-apresentacao .contentBx,
+    .sec-apresentacao .imgAp{
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .contentBx .heading{
+        font-size: 2rem;
+    }
+    .contentBx p{
+        font-size: 1.5rem;
+    }
+    .contentBx p span{
+        font-size: 1rem;
+    }
+}
